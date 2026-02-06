@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- Floating Background Elements -->
     <div class="floating-elements" aria-hidden="true"></div>
 
     <main class="container">
@@ -22,9 +21,7 @@
 
       <!-- Music Player -->
       <div id="musicControls" class="music-controls">
-        <button id="musicToggle" class="music-btn" type="button">
-          🎵 Play Music
-        </button>
+        <button id="musicToggle" class="music-btn" type="button">🎵 Play Music</button>
 
         <audio id="bgMusic" loop>
           <source id="musicSource" type="audio/mpeg" />
@@ -46,7 +43,7 @@
         </div>
       </section>
 
-      <!-- Question 2 -->
+      <!-- Question 2 (Love Meter) -->
       <section class="question-section hidden" id="question2">
         <h2 id="question2Text"></h2>
 
@@ -63,8 +60,7 @@
 
           <p>
             <span class="love-value-container">
-              <span id="startText"></span>
-              (<span id="loveValue">100</span>%)
+              <span id="startText"></span> (<span id="loveValue">100</span>%)
             </span>
             <span id="extraLove" class="hidden"></span>
           </p>
@@ -73,13 +69,29 @@
         <button class="cute-btn" id="nextBtn" type="button"></button>
       </section>
 
-      <!-- Question 3 -->
+      <!-- Question 3 (Text Box) -->
       <section class="question-section hidden" id="question3">
         <h2 id="question3Text"></h2>
 
+        <div class="text-answer">
+          <textarea
+            id="foreverAnswer"
+            class="text-input"
+            placeholder="Type your answer here..."
+            rows="4"
+          ></textarea>
+        </div>
+
+        <button class="cute-btn" id="submitForeverBtn" type="button"></button>
+      </section>
+
+      <!-- Question 4 (Final Yes/No) -->
+      <section class="question-section hidden" id="question4">
+        <h2 id="question4Text"></h2>
+
         <div class="button-group">
-          <button class="cute-btn final-yes" id="yesBtn3" type="button"></button>
-          <button class="cute-btn" id="noBtn3" type="button"></button>
+          <button class="cute-btn final-yes" id="yesBtn4" type="button"></button>
+          <button class="cute-btn" id="noBtn4" type="button"></button>
         </div>
       </section>
 
@@ -90,10 +102,14 @@
         <p class="celebration-text" id="celebrationEmojis"></p>
       </section>
 
+      <!-- Share Button -->
+      <div class="share-container">
+        <button id="shareBtn" class="share-btn" type="button">🔗 Share This Page</button>
+      </div>
+    </main>
 
-    <!-- Only load YOUR scripts to avoid old code overriding -->
+    <!-- Config first, then script -->
+    <script src="config.js?v=1"></script>
     <script src="script.js?v=1"></script>
   </body>
 </html>
-
-
