@@ -347,25 +347,6 @@ function setupMusicPlayer() {
   });
 }
 
-// Share Link Setup
-function setupShareButton() {
-  const shareBtn = document.getElementById("shareBtn");
-  if (!shareBtn) return;
-
-  shareBtn.addEventListener("click", () => {
-    // Support either window.ValentineConfig or window.VALENTINE_CONFIG helper
-    const copier =
-      window.ValentineConfig?.copyShareLink || window.VALENTINE_CONFIG?.copyShareLink;
-
-    if (typeof copier !== "function") return;
-
-    copier().then((success) => {
-      if (success) {
-        const originalText = shareBtn.textContent;
-        shareBtn.textContent = "Link Copied! ❤️";
-        setTimeout(() => {
-          shareBtn.textContent = originalText;
-        }, 2000);
       }
     });
   });
