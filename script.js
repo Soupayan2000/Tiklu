@@ -6,8 +6,8 @@ function validateConfig() {
     const warnings = [];
 
     // Check required fields
-    if (!config.valentineName) {
-        warnings.push("Valentine's name is not set! Using default.");
+    if (!config.Tiklu) {
+        warnings.push("Tiklu");
         config.valentineName = "Tiklu";
     }
 
@@ -62,18 +62,18 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('valentineTitle').textContent = `${config.valentineName}, my love...`;
     
     // Set first question texts
-    document.getElementById('question1Text').textContent = config.questions.first.text;
+    document.getElementById('Do I still give you butterflies?').textContent = config.questions.first.text;
     document.getElementById('yesBtn1').textContent = config.questions.first.yesBtn;
     document.getElementById('noBtn1').textContent = config.questions.first.noBtn;
     document.getElementById('secretAnswerBtn').textContent = config.questions.first.secretAnswer;
     
     // Set second question texts
-    document.getElementById('question2Text').textContent = config.questions.second.text;
+    document.getElementById('What does “forever” look like to you right now?').textContent = config.questions.second.text;
     document.getElementById('startText').textContent = config.questions.second.startText;
     document.getElementById('nextBtn').textContent = config.questions.second.nextBtn;
     
     // Set third question texts
-    document.getElementById('question3Text').textContent = config.questions.third.text;
+    document.getElementById('Will you be my valentine?').textContent = config.questions.third.text;
     document.getElementById('yesBtn3').textContent = config.questions.third.yesBtn;
     document.getElementById('noBtn3').textContent = config.questions.third.noBtn;
 
