@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -22,7 +21,6 @@
       <!-- Music Player -->
       <div id="musicControls" class="music-controls">
         <button id="musicToggle" class="music-btn" type="button">🎵 Play Music</button>
-
         <audio id="bgMusic" loop>
           <source id="musicSource" type="audio/mpeg" />
           Your browser does not support the audio element.
@@ -32,12 +30,10 @@
       <!-- Question 1 -->
       <section class="question-section" id="question1">
         <h2 id="question1Text"></h2>
-
         <div class="button-group">
           <button class="cute-btn" id="yesBtn1" type="button"></button>
           <button class="cute-btn" id="noBtn1" type="button"></button>
         </div>
-
         <div class="secret-answer">
           <button class="cute-btn special" id="secretAnswerBtn" type="button"></button>
         </div>
@@ -57,7 +53,6 @@
             class="slider"
             id="loveMeter"
           />
-
           <p>
             <span class="love-value-container">
               <span id="startText"></span> (<span id="loveValue">100</span>%)
@@ -69,7 +64,7 @@
         <button class="cute-btn" id="nextBtn" type="button"></button>
       </section>
 
-      <!-- Question 3 (Text Box) -->
+      <!-- Question 3 (TEXT BOX ONLY HERE) -->
       <section class="question-section hidden" id="question3">
         <h2 id="question3Text"></h2>
 
@@ -85,10 +80,9 @@
         <button class="cute-btn" id="submitForeverBtn" type="button"></button>
       </section>
 
-      <!-- Question 4 (Final Yes/No) -->
+      <!-- Question 4 (FINAL YES/NO ONLY — NO TEXTBOX) -->
       <section class="question-section hidden" id="question4">
         <h2 id="question4Text"></h2>
-
         <div class="button-group">
           <button class="cute-btn final-yes" id="yesBtn4" type="button"></button>
           <button class="cute-btn" id="noBtn4" type="button"></button>
@@ -108,8 +102,8 @@
       </div>
     </main>
 
-    <!-- Config first, then script -->
-    <script src="config.js?v=1"></script>
-    <script src="script.js?v=1"></script>
+    <!-- Load config first, then script -->
+    <script src="config.js?v=2"></script>
+    <script src="script.js?v=2"></script>
   </body>
 </html>
