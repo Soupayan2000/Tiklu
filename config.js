@@ -7,6 +7,13 @@ window.VALENTINE_CONFIG = {
     bears: ["🧸", "🐻"],
   },
 
+  // ✅ Your uploaded images (these paths match your repo screenshot)
+  floatingImages: [
+    "images/IMG_6771.jpg",
+    "images/IMG_6888.jpg",
+    "images/IMG_9651.jpg",
+  ],
+
   questions: {
     first: {
       text: "Do I still give you butterflies?",
@@ -21,14 +28,12 @@ window.VALENTINE_CONFIG = {
       nextBtn: "Next ➜",
     },
 
-    // ✅ This is the ONLY question with a text box
     third: {
       text: "What does “forever” look like to you right now?",
       placeholder: "Type your answer here...",
       buttonText: "Next ➜",
     },
 
-    // ✅ Final question stays YES/NO (no text box)
     fourth: {
       text: "Will you be my valentine?",
       yesBtn: "Yes!! 💘",
